@@ -7,6 +7,12 @@ public class BMI
   private Inch  inches;
 
   // Constructors
+  public BMI(double pounds, double inches)
+  {
+    this.pounds = new Pound(pounds);
+    this.inches = new Inch(inches);
+  }
+
   public BMI(Pound pounds, Inch inches)
   {
     this.pounds = pounds;

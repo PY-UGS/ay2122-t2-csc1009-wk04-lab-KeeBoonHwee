@@ -6,15 +6,12 @@ public class Q1 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter weight in pounds: ");
-        double weightInPound = input.nextDouble();
+        double pounds = input.nextDouble();
 
         System.out.print("Enter height in inches: ");
-        double heightInInches = input.nextDouble();
+        double inches = input.nextDouble();
 
-        Pound pounds = new Pound(weightInPound);
-        Inch inches = new Inch(heightInInches);
         BMI bmi = new BMI(pounds, inches);
-
         System.out.println("BMI is " + bmi.getBMI());
         System.out.println(bmi.interpretBMI());
         input.close();
